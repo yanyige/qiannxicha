@@ -1,0 +1,25 @@
+/* pages/userConsole/userConsole.wxss */
+
+@import "../../style/guide.wxss";
+
+.root {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.backImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+}
+
+.page-body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+}

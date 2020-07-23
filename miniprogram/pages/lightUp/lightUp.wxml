@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="page-body">
+    <block wx:for="{{lots}}">
+      <view class='flex-list wrapper{{index}} {{index != lightUpId ? "gray" : ""}}' bindtap="nextPage" data-index="{{index}}" wx:key="index">
+      </view>
+    </block>
+  </view>
+
+  <!-- 确认按钮 -->
+  <button class="next weui-btn_mini">点亮便知</button>
+</view>

@@ -1,0 +1,34 @@
+<!--miniprogram/pages/shareCenter/shareCenter.wxml-->
+<view class="container">
+  <image class="poster" src="http://qx.tkmao.com/wenchuang/poster/{{lightUpId}}t.png" bindtap='getAnmiation'></image>
+
+  <view class='content'>
+    <view class='line'>
+      <image src='{{tab1.url}}' animation="{{animationData1}}" bindtransitionend="getOpenAnimation"></image>
+      <image class='default-img' hidden='{{showDefault}}' src='{{tab1.url}}'></image>
+    </view>
+    <view class='line'>
+      <image src='{{tab2.url}}' animation="{{animationData2}}" bindtransitionend="getOpenAnimation"></image>
+      <image class='default-img' hidden='{{showDefault}}' src='{{tab2.url}}'></image>
+    </view>
+    <view class='line'>
+      <image src='{{tab3.url}}' animation="{{animationData3}}" bindtransitionend="getOpenAnimation"></image>
+      <image class='default-img' hidden='{{showDefault}}' src='{{tab3.url}}'></image>
+    </view>
+  </view>
+
+  <block wx:if="{{!shared}}">
+    <!-- 转运分享 -->
+    <view class="shareEsoterica" bindtap="shareEsoterica"></view>
+
+    <!-- 吉时领券 -->
+    <view class="coupon" bindtap="coupon"></view>
+
+    <!-- 调味分享 -->
+    <view class="shareSmell" bindtap="shareSmell"></view>
+  </block>
+  <view wx:else>
+    <image wx:if="{{!(shared == false)}}" class="QRCode" src="http://qx.tkmao.com/wenchuang/esoterica/QRcodeNew.jpeg"></image>
+  </view>
+  
+</view>

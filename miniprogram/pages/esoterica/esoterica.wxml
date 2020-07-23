@@ -1,0 +1,44 @@
+<!--miniprogram/pages/esoterica/esoterica.wxml-->
+<view class="container">
+    <!-- 用户头像 -->
+    <!-- <view class="avatar">
+        <view class="userinfo-wrapper">
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </view>
+    </view> -->
+    <view class="avatar">
+         <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+         <image class="userinfo-profile" src="http://qx.tkmao.com/wenchuang/esoterica/profile.png"></image>
+    </view>
+    <text class="userinfo-nickname">{{userInfo.nickName || '游客'}}</text>
+    <!-- 宜 -->
+    <view class="calendar-suit">
+        <text class="calendar-text" wx:for="{{suit}}" wx:key="index">{{item}} </text>
+    </view>
+    <!-- 忌 -->
+    <view class="calendar-avoid">
+        <text class="calendar-text" wx:for="{{avoid}}" wx:key="index">{{item}}</text>
+    </view>
+    <!-- 一日一签 -->
+    <view class="secret-panel">
+        <view class="secret-text">
+            <text class="secret-title">转运行为</text>
+        </view>
+        <text class="secret-content">{{secret}}</text>
+
+    </view>
+    <!-- 生肖 -->
+    <view class="zodiac">
+        <image src="http://qx.tkmao.com/wenchuang/zodiac/{{zodiac}}.png"></image>
+    </view>
+    <image class="zodiac-luck" src="http://qx.tkmao.com/wenchuang/esoterica/{{isGoodLuck ? 'good_luck' : 'bad_luck'}}.png"></image>
+    <!-- 星座 -->
+    <view class="constellation">
+        <image src="http://qx.tkmao.com/wenchuang/constellation/{{constellation}}.png"></image>
+    </view>
+    <image class="constellation-luck" src="http://qx.tkmao.com/wenchuang/esoterica/{{isGoodLuck ? 'good_luck' : 'bad_luck'}}.png"></image>
+    <button wx:if="{{(shared == false)}}" class="nextPage" bindtap="nextPage">开始</button>
+    <image wx:if="{{!(shared == false)}}" class="logo" src="http://qx.tkmao.com/wenchuang/esoterica/logoindex.png"></image>
+    <image wx:if="{{!(shared == false)}}" class="QRCode" src="http://qx.tkmao.com/wenchuang/esoterica/QRcodeNew.jpeg"></image>
+</view>

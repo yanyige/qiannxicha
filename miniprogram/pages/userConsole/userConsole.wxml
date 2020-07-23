@@ -1,0 +1,47 @@
+<!--pages/userConsole/userConsole.wxml-->
+<view class="root">
+  <image src='../../static/info.jpg' width='100%' height='100%' class="backImg" mode="aspectFill"/>
+  <view class="page-body">
+    <view wx:if="{{!registered}}" class="page-section">
+      <view class="page-section-title">用户信息</view>
+
+      <!-- 性别选择 -->
+      <view class="weui-cells weui-cells_after-title">
+        <!-- <view class="section__title">普通选择器</view> -->
+        <picker bindchange="bindRadioChange" range="{{gender}}">
+          <view class="picker">
+            性别: {{userinfo.gender}}
+          </view>
+        </picker>
+      </view>
+
+      <!-- 日期选择 -->
+      <view class="section">
+        <!-- <view class="section__title">出生日期</view> -->
+        <picker mode="date" value="{{userinfo.date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="picker">
+            出生日期: {{userinfo.date}}
+          </view>
+        </picker>
+      </view>
+
+      <!-- 身高「cm」 -->
+      <view class="section section_gap">
+        <text class="section__title">身高 {{userinfo.height}} cm</text>
+        <view class="body-view">
+            <slider bindchange="bindHeightChange" show-value min='80' max='220'/>
+        </view>
+      </view>
+
+      <!-- 体重「kg」 -->
+      <view class="section section_gap">
+        <text class="section__title">体重 {{userinfo.weight}} kg</text>
+        <view class="body-view">
+            <slider bindchange="bingWeightChange" show-value min='30' max='120'/>
+        </view>
+      </view>
+      <button type='primary' bindtap="saveUserInfo">开始</button>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/deployFunctions/deployFunctions",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/drawLots/drawLots",
+    "pages/showLots/showLots",
+    "pages/sharedLots/sharedLots",
+    "pages/esoterica/esoterica",
+    "pages/lightUp/lightUp",
+    "pages/shareCenter/shareCenter",
+    "pages/out/out"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "navigateToMiniProgramAppIdList": [
+    "wxca878755feb58368"
+  ]
+}

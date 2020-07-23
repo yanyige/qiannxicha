@@ -1,0 +1,115 @@
+/**index.wxss**/
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(http://qx.tkmao.com/wenchuang/index/P1-1.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.myauth {
+  position: absolute;
+  top: 37%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: transparent;
+  border: none;
+  background: url(http://qx.tkmao.com/wenchuang/index/P1-auth.png) no-repeat;
+  background-size: 80% 140%;
+  background-position: center;
+}
+
+.mybirth {
+  position: absolute;
+  top: 48%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: url(http://qx.tkmao.com/wenchuang/index/P1-birth.png) no-repeat;
+  background-size: 40% 100%;
+  background-position: center;
+}
+
+.mybirth .picker {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  color: pink;
+}
+
+.male {
+  position: absolute;
+  top: 56%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: url(http://qx.tkmao.com/wenchuang/index/P1-male.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.male.active {
+  position: absolute;
+  top: 56%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: url(http://qx.tkmao.com/wenchuang/index/P1-male-active.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.female {
+  position: absolute;
+  top: 66%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: url(http://qx.tkmao.com/wenchuang/index/P1-female.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.female.active {
+  position: absolute;
+  top: 66%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: url(http://qx.tkmao.com/wenchuang/index/P1-female-active.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.start {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: transparent;
+  border: none;
+  background: url(http://qx.tkmao.com/wenchuang/index/P1-confirm.png) no-repeat;
+  background-size: 60% 100%;
+  background-position: center;
+}
+
+.backImg {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}

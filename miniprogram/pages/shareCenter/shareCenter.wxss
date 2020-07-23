@@ -1,0 +1,107 @@
+/* miniprogram/pages/shareCenter/shareCenter.wxss */
+.container {
+  margin: 0;
+  height: 100%;
+  background: rgb(246, 195, 203);
+}
+.poster {
+  height: 85%;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+}
+.shareEsoterica {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  z-index: 100;
+  color: transparent;
+  border: none;
+  background: url(http://qx.tkmao.com/wenchuang/shareCenter/shareEsoterica.png) no-repeat;
+  background-size: 80% 100%;
+  background-position: center;
+  width: 33%;
+  height: 30px;
+}
+.coupon {
+  position: absolute;
+  top: 90%;
+  left: 0%;
+  right: 0;
+  margin: 0 auto;
+  z-index: 100;
+  color: transparent;
+  border: none;
+  background: url(http://qx.tkmao.com/wenchuang/shareCenter/coupon.png) no-repeat;
+  background-size: 80% 100%;
+  background-position: center;
+  width: 33%;
+  height: 30px;
+}
+.shareSmell {
+  position: absolute;
+  top: 90%;
+  right: 0;
+  z-index: 100;
+  color: transparent;
+  border: none;
+  background: url(http://qx.tkmao.com/wenchuang/shareCenter/shareSmell.png) no-repeat;
+  background-size: 80% 100%;
+  background-position: center;
+  width: 33%;
+  height: 30px;
+}
+.QRCode {
+  position: absolute;
+  top: 87%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: transparent;
+  border: none;
+  margin: 0 auto;
+  width: 85px;
+  height: 85px;
+}
+
+.show-draw {
+  width: 257rpx;
+  height: 71rpx;
+  position: relative;
+  z-index: 2;
+  bottom:103rpx;
+}
+ 
+.content {
+  display:flex;
+  justify-content:space-between;
+  position:absolute;
+  width:69%;
+  left:15%;
+  height:205rpx;
+  top: 30%;
+  border-radius:10rpx;
+  z-index: 1;
+  margin-left: 8rpx;
+}
+ 
+ 
+.content .line {
+  width: 149rpx;
+  height: 168rpx;
+  border-radius: 14rpx;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.content .line image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -170rpx;
+  left: 0px;
+}
+ 
+.content .line .default-img {
+  top: 0rpx;
+}

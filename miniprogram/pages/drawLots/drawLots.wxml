@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="page-body">
+      <view wx:for="{{lots}}" class="flex-list wrapper{{index}}" bindtap="nextPage" data-index="{{index}}" wx:key="index">
+      </view>
+  </view>
+
+  <!-- 确认按钮 -->
+  <button class="next weui-btn_mini">一茶便知</button>
+</view>

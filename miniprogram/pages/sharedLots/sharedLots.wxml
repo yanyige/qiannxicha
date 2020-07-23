@@ -1,0 +1,24 @@
+
+<!--miniprogram/pages/sharedLots/sharedLots.wxml-->
+<image src='../../static/desk.jpg' width='100%' height='100%' class="backImg"/>
+<view class="container">
+  <view class="page-header">
+    {{userName}} 分享的 独家海报
+  </view>
+  <view class="page-body">
+      <view class="page-section">
+        {{lot.level}}
+      </view>
+      <view class="page-section">
+        {{lot.desc}}
+      </view>
+      <view class="page-section">
+        {{lot.content}}
+      </view>
+  </view>
+  <view class="page-footer">
+    <button type='primary' bindtap="getNew">获取自己的秘籍</button>
+    <button open-type="share">分享海报</button>
+  </view>
+</view>
+

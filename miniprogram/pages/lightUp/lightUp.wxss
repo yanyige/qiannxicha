@@ -1,0 +1,126 @@
+/* miniprogram/pages/lightUp/lightUp.wxss */
+/* miniprogram/pages/drawLots/drawLots.wxss */
+.container {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(245, 220, 218);
+}
+
+.page-body {
+  position: absolute;
+  left: 21px;
+  top: 5px;
+  right: 21px;
+  bottom: 70px;  
+}
+
+.flex-list {
+  float:left;
+  height:33.3%;
+  width:33.3%;
+  position:relative;
+}
+
+.list-list:before{
+  content:'';
+  position:absolute;
+  left:10px;
+  right:10px;
+  top:10px;
+  bottom:10px;
+  border-radius:10px;
+  background-color:#cad5eb;
+}
+.list-list:after{
+  content:attr(data-index);
+  position:absolute;
+  height:30px;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  text-align:center;
+  font:24px/30px bold 'microsoft yahei';
+}
+
+.next {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: transparent;
+  border: none;
+  background: url(http://qx.tkmao.com/wenchuang/lightUp/button1.png) no-repeat;
+  background-size: 100px 30px;
+  background-position: center;
+}
+
+.wrapper0 {
+  background: url(http://qx.tkmao.com/wenchuang/lightUp/1苹果.png);
+  background-size: 75px 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper1 {
+  background: url(http://qx.tkmao.com/wenchuang/lightUp/2橙汁.png);
+  background-size: 75px 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper2 {
+  background: url(http://qx.tkmao.com/wenchuang/lightUp/3雪碧.png);
+  background-size: 75px 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper3 {
+  background: url(http://qx.tkmao.com/wenchuang/lightUp/4雀巢.png);
+  background-size: 75px 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper4 {
+  background: url(http://qx.tkmao.com/wenchuang/lightUp/5农夫山泉.png);
+  background-size: 75px 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper5 {
+  background: url(http://qx.tkmao.com/wenchuang/lightUp/6旺仔.png);
+  background-size: 75px 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper6 {
+  background: url(http://qx.tkmao.com/wenchuang/lightUp/7可乐.png);
+  background-size: 75px 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper7 {
+  background: url(http://qx.tkmao.com/wenchuang/lightUp/8尖叫.png);
+  background-size: 75px 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper8 {
+  background: url(http://qx.tkmao.com/wenchuang/lightUp/9咖啡.png);
+  background-size: 75px 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gray {
+  -webkit-filter: grayscale(1); /* Webkit */
+  filter: gray; /* IE6-9 */  
+  filter: grayscale(1); /* W3C */
+}

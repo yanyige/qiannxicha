@@ -1,0 +1,168 @@
+/* miniprogram/pages/esoterica/esoterica.wxss */
+.container {
+  height: 100%;
+  margin: 0;
+  background: url(http://qx.tkmao.com/wenchuang/esoterica/EGBG.png) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.avatar {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+}
+.userinfo-avatar {
+  height: 80px;
+  width: 80px;
+  left: 19px;
+  position: absolute;
+}
+.userinfo-profile {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 0;
+}
+.userinfo-nickname {
+  text-align: center;
+  background: url(http://qx.tkmao.com/wenchuang/esoterica/avatar_name.png) no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  width: 90px;
+  position: absolute;
+  left: 20px;
+  height: 16px;
+  top: 90px;
+  font-size: 12px;
+}
+.calendar-suit {
+  background: url(http://qx.tkmao.com/wenchuang/esoterica/suit.png) no-repeat;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 175px;
+  text-align: center;
+  overflow: hidden;
+  left: 14%;
+  top: 18%;
+  position: absolute;
+  letter-spacing: 3px;
+  z-index: 3;
+}
+.calendar-avoid {
+  background: url(http://qx.tkmao.com/wenchuang/esoterica/avoid.png) no-repeat;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 175px;
+  text-align: center;
+  overflow: hidden;
+  right: 16%;
+  bottom: 26%;
+  position: absolute;
+  letter-spacing: 3px;
+  z-index: 3;
+}
+.calendar-text {
+  color: white;
+  top: 50px;
+  font-size: 18px;
+  position: relative;
+}
+.secret-panel {
+  background: url(http://qx.tkmao.com/wenchuang/esoterica/secret.png) no-repeat;
+  background-size: 100% 100%;
+  width: 250px;
+  height: 275px;
+  text-align: center;
+  overflow: hidden;
+  top: calc(50% - 185px);
+  position: absolute;
+  letter-spacing: 3px;
+  z-index: 2;
+}
+.secret-text {
+  margin: 35px 80px 0px 80px;
+  height: 220px;
+}
+.secret-title {
+  color: white;
+  font-size: 18px;
+  position: relative;
+}
+.secret-content {
+  color: #f09aac;
+  font-size: 25px;
+  position: absolute;
+  top: 10px;
+  font-family: 'Microsoft YaHei';
+  top: 50%;
+  transform: translateY(-50%);
+  left: 29%;
+  width: 110px;
+}
+.zodiac {
+  width: 90px;
+  height: 120px;
+  position: absolute;
+  right: 13%;
+  top: 17%;  
+}
+.zodiac-luck {
+  position: absolute;
+  height: 10px;
+  width: 60px;
+  z-index: 2;
+  right: 10%;
+  top: 26%;  
+}
+.constellation {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 4%;
+  bottom: 24%; 
+}
+.constellation-luck {
+  position: absolute;
+  height: 10px;
+  width: 60px;
+  z-index: 2;
+  left: 9%;
+  bottom: 29%;  
+}
+.nextPage {
+  background: url(http://qx.tkmao.com/wenchuang/esoterica/nextPage1.png) no-repeat;
+  background-size: 100px 30px;
+  background-position: center;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: transparent;
+  border: none;
+}
+.QRCode {
+  position: absolute;
+  top: 87%;
+  right: 0;
+  z-index: 100;
+  color: transparent;
+  border: none;
+  margin: 0 auto;
+  width: 85px;
+  height: 85px;
+}
+.logo {
+  position: absolute;
+  top: 87%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: transparent;
+  border: none;
+  margin: 0 auto;
+  width: 140px;
+  height: 85px;
+}

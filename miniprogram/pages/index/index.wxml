@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 用户 openid -->
+  <button open-type="getUserInfo" bindgetuserinfo="onGetOpenid" class="myauth weui-btn_mini">授权</button>
+
+  <!-- 日期选择 -->
+  <view class="mybirth">
+    <!-- <view class="section__title">出生日期</view> -->
+    <picker mode="date" value="{{users.date}}" start="1966-09-01" end="2021-09-01" bindchange="bindDateChange">
+      <view class="picker">
+        {{users.date == null ? '确定后无法修改哦~' : users.date}}
+      </view>
+    </picker>
+  </view>
+
+  <!-- 性别选择 -->
+  <view class="{{users.gender == 'male' ? 'male active' : 'male'}}" bindtap="bindChangeGender" data-gender="male"></view>
+  <view class="{{users.gender == 'female' ? 'female active' : 'female'}}"  bindtap="bindChangeGender" data-gender="female"></view>
+
+  <!-- 确认按钮 -->
+  <button class="start weui-btn_mini" bindtap="nextPage">开始</button>
+</view>
